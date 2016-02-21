@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6457DB5677779EDA9161452F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B729E02A1A135EC55A0D7FEB /* Pods.framework */; };
 		FAD926C11C788BD50003B0FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD926C01C788BD50003B0FD /* AppDelegate.swift */; };
 		FAD926C31C788BD50003B0FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD926C21C788BD50003B0FD /* ViewController.swift */; };
 		FAD926C61C788BD50003B0FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD926C41C788BD50003B0FD /* Main.storyboard */; };
@@ -14,6 +15,20 @@
 		FAD926CB1C788BD50003B0FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD926C91C788BD50003B0FD /* LaunchScreen.storyboard */; };
 		FAD926D61C788BD50003B0FD /* StibNextMetroAroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD926D51C788BD50003B0FD /* StibNextMetroAroundTests.swift */; };
 		FAD926E11C788BD50003B0FD /* StibNextMetroAroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD926E01C788BD50003B0FD /* StibNextMetroAroundUITests.swift */; };
+		FAD926F51C788C150003B0FD /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD926F41C788C150003B0FD /* NotificationCenter.framework */; };
+		FAD926F81C788C150003B0FD /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD926F71C788C150003B0FD /* TodayViewController.swift */; };
+		FAD926FB1C788C150003B0FD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD926F91C788C150003B0FD /* MainInterface.storyboard */; };
+		FAD926FF1C788C150003B0FD /* nextMetro.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FAD926F21C788C150003B0FD /* nextMetro.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FAD927101C79D18E0003B0FD /* IncomingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9270F1C79D18E0003B0FD /* IncomingList.swift */; };
+		FAD927131C79F8DB0003B0FD /* MetroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD927121C79F8DB0003B0FD /* MetroCell.swift */; };
+		FAD927161C79F9470003B0FD /* GeoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD927151C79F9470003B0FD /* GeoHelper.swift */; };
+		FAD9271C1C79FAAB0003B0FD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD927171C79FAAB0003B0FD /* Alamofire.framework */; };
+		FAD9271D1C79FAAB0003B0FD /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD927181C79FAAB0003B0FD /* BrightFutures.framework */; };
+		FAD9271E1C79FAAB0003B0FD /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD927191C79FAAB0003B0FD /* Pods.framework */; };
+		FAD9271F1C79FAAB0003B0FD /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD9271A1C79FAAB0003B0FD /* Result.framework */; };
+		FAD927201C79FAAB0003B0FD /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD9271B1C79FAAB0003B0FD /* SWXMLHash.framework */; };
+		FAD927211C79FAB30003B0FD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD9270C1C79D07B0003B0FD /* CoreLocation.framework */; };
+		FAD927251C7A3EF00003B0FD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD9270C1C79D07B0003B0FD /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +46,33 @@
 			remoteGlobalIDString = FAD926BC1C788BD40003B0FD;
 			remoteInfo = StibNextMetroAround;
 		};
+		FAD926FD1C788C150003B0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD926B51C788BD40003B0FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD926F11C788C150003B0FD;
+			remoteInfo = nextMetro;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FAD927031C788C150003B0FD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FAD926FF1C788C150003B0FD /* nextMetro.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		910C4D8D21DF88D38E08F478 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B729E02A1A135EC55A0D7FEB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6C3D76154BCF124C24385EE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FAD926BD1C788BD40003B0FD /* StibNextMetroAround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StibNextMetroAround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD926C01C788BD50003B0FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD926C21C788BD50003B0FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +86,24 @@
 		FAD926DC1C788BD50003B0FD /* StibNextMetroAroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StibNextMetroAroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD926E01C788BD50003B0FD /* StibNextMetroAroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StibNextMetroAroundUITests.swift; sourceTree = "<group>"; };
 		FAD926E21C788BD50003B0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD926F21C788C150003B0FD /* nextMetro.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = nextMetro.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD926F41C788C150003B0FD /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		FAD926F71C788C150003B0FD /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		FAD926FA1C788C150003B0FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FAD926FC1C788C150003B0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD927041C79D0750003B0FD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		FAD927051C79D0750003B0FD /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = "Pods/../build/Debug-iphoneos/BrightFutures.framework"; sourceTree = "<group>"; };
+		FAD927061C79D0750003B0FD /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "Pods/../build/Debug-iphoneos/Result.framework"; sourceTree = "<group>"; };
+		FAD927071C79D0750003B0FD /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = "Pods/../build/Debug-iphoneos/SWXMLHash.framework"; sourceTree = "<group>"; };
+		FAD9270C1C79D07B0003B0FD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FAD9270F1C79D18E0003B0FD /* IncomingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingList.swift; sourceTree = "<group>"; };
+		FAD927121C79F8DB0003B0FD /* MetroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroCell.swift; sourceTree = "<group>"; };
+		FAD927151C79F9470003B0FD /* GeoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoHelper.swift; sourceTree = "<group>"; };
+		FAD927171C79FAAB0003B0FD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		FAD927181C79FAAB0003B0FD /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = "Pods/../build/Debug-iphoneos/BrightFutures.framework"; sourceTree = "<group>"; };
+		FAD927191C79FAAB0003B0FD /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
+		FAD9271A1C79FAAB0003B0FD /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "Pods/../build/Debug-iphoneos/Result.framework"; sourceTree = "<group>"; };
+		FAD9271B1C79FAAB0003B0FD /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = "Pods/../build/Debug-iphoneos/SWXMLHash.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD927251C7A3EF00003B0FD /* CoreLocation.framework in Frameworks */,
+				6457DB5677779EDA9161452F /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,18 +130,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAD926EF1C788C150003B0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD927211C79FAB30003B0FD /* CoreLocation.framework in Frameworks */,
+				FAD9271C1C79FAAB0003B0FD /* Alamofire.framework in Frameworks */,
+				FAD9271D1C79FAAB0003B0FD /* BrightFutures.framework in Frameworks */,
+				FAD9271E1C79FAAB0003B0FD /* Pods.framework in Frameworks */,
+				FAD9271F1C79FAAB0003B0FD /* Result.framework in Frameworks */,
+				FAD927201C79FAAB0003B0FD /* SWXMLHash.framework in Frameworks */,
+				FAD926F51C788C150003B0FD /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CA34BB7341848269198E4C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6C3D76154BCF124C24385EE /* Pods.debug.xcconfig */,
+				910C4D8D21DF88D38E08F478 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FAD926B41C788BD40003B0FD = {
 			isa = PBXGroup;
 			children = (
 				FAD926BF1C788BD40003B0FD /* StibNextMetroAround */,
 				FAD926D41C788BD50003B0FD /* StibNextMetroAroundTests */,
 				FAD926DF1C788BD50003B0FD /* StibNextMetroAroundUITests */,
+				FAD926F61C788C150003B0FD /* nextMetro */,
+				FAD926F31C788C150003B0FD /* Frameworks */,
 				FAD926BE1C788BD40003B0FD /* Products */,
+				5CA34BB7341848269198E4C2 /* Pods */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
+			wrapsLines = 0;
 		};
 		FAD926BE1C788BD40003B0FD /* Products */ = {
 			isa = PBXGroup;
@@ -90,6 +177,7 @@
 				FAD926BD1C788BD40003B0FD /* StibNextMetroAround.app */,
 				FAD926D11C788BD50003B0FD /* StibNextMetroAroundTests.xctest */,
 				FAD926DC1C788BD50003B0FD /* StibNextMetroAroundUITests.xctest */,
+				FAD926F21C788C150003B0FD /* nextMetro.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +213,62 @@
 			path = StibNextMetroAroundUITests;
 			sourceTree = "<group>";
 		};
+		FAD926F31C788C150003B0FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAD927171C79FAAB0003B0FD /* Alamofire.framework */,
+				FAD927181C79FAAB0003B0FD /* BrightFutures.framework */,
+				FAD927191C79FAAB0003B0FD /* Pods.framework */,
+				FAD9271A1C79FAAB0003B0FD /* Result.framework */,
+				FAD9271B1C79FAAB0003B0FD /* SWXMLHash.framework */,
+				FAD9270C1C79D07B0003B0FD /* CoreLocation.framework */,
+				FAD927041C79D0750003B0FD /* Alamofire.framework */,
+				FAD927051C79D0750003B0FD /* BrightFutures.framework */,
+				FAD927061C79D0750003B0FD /* Result.framework */,
+				FAD927071C79D0750003B0FD /* SWXMLHash.framework */,
+				FAD926F41C788C150003B0FD /* NotificationCenter.framework */,
+				B729E02A1A135EC55A0D7FEB /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAD926F61C788C150003B0FD /* nextMetro */ = {
+			isa = PBXGroup;
+			children = (
+				FAD927141C79F9350003B0FD /* Helpers */,
+				FAD927111C79D1A00003B0FD /* New Group */,
+				FAD9270E1C79D0B20003B0FD /* Models */,
+				FAD926F71C788C150003B0FD /* TodayViewController.swift */,
+				FAD926F91C788C150003B0FD /* MainInterface.storyboard */,
+				FAD926FC1C788C150003B0FD /* Info.plist */,
+			);
+			path = nextMetro;
+			sourceTree = "<group>";
+		};
+		FAD9270E1C79D0B20003B0FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9270F1C79D18E0003B0FD /* IncomingList.swift */,
+				FAD927121C79F8DB0003B0FD /* MetroCell.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FAD927111C79D1A00003B0FD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		FAD927141C79F9350003B0FD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAD927151C79F9470003B0FD /* GeoHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,13 +276,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAD926E51C788BD50003B0FD /* Build configuration list for PBXNativeTarget "StibNextMetroAround" */;
 			buildPhases = (
+				1396D3C5BD10D40E3065153D /* Check Pods Manifest.lock */,
 				FAD926B91C788BD40003B0FD /* Sources */,
 				FAD926BA1C788BD40003B0FD /* Frameworks */,
 				FAD926BB1C788BD40003B0FD /* Resources */,
+				FAD927031C788C150003B0FD /* Embed App Extensions */,
+				5769708FABB2DE062189BA65 /* Embed Pods Frameworks */,
+				ACF6EE96FD7C9DC40BE8FF38 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FAD926FE1C788C150003B0FD /* PBXTargetDependency */,
 			);
 			name = StibNextMetroAround;
 			productName = StibNextMetroAround;
@@ -181,6 +330,23 @@
 			productReference = FAD926DC1C788BD50003B0FD /* StibNextMetroAroundUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FAD926F11C788C150003B0FD /* nextMetro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD927001C788C150003B0FD /* Build configuration list for PBXNativeTarget "nextMetro" */;
+			buildPhases = (
+				FAD926EE1C788C150003B0FD /* Sources */,
+				FAD926EF1C788C150003B0FD /* Frameworks */,
+				FAD926F01C788C150003B0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nextMetro;
+			productName = nextMetro;
+			productReference = FAD926F21C788C150003B0FD /* nextMetro.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +371,10 @@
 						DevelopmentTeam = 2278CMG93R;
 						TestTargetID = FAD926BC1C788BD40003B0FD;
 					};
+					FAD926F11C788C150003B0FD = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 2278CMG93R;
+					};
 				};
 			};
 			buildConfigurationList = FAD926B81C788BD40003B0FD /* Build configuration list for PBXProject "StibNextMetroAround" */;
@@ -223,6 +393,7 @@
 				FAD926BC1C788BD40003B0FD /* StibNextMetroAround */,
 				FAD926D01C788BD50003B0FD /* StibNextMetroAroundTests */,
 				FAD926DB1C788BD50003B0FD /* StibNextMetroAroundUITests */,
+				FAD926F11C788C150003B0FD /* nextMetro */,
 			);
 		};
 /* End PBXProject section */
@@ -252,7 +423,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAD926F01C788C150003B0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD926FB1C788C150003B0FD /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1396D3C5BD10D40E3065153D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5769708FABB2DE062189BA65 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACF6EE96FD7C9DC40BE8FF38 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAD926B91C788BD40003B0FD /* Sources */ = {
@@ -280,6 +507,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAD926EE1C788C150003B0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD926F81C788C150003B0FD /* TodayViewController.swift in Sources */,
+				FAD927161C79F9470003B0FD /* GeoHelper.swift in Sources */,
+				FAD927101C79D18E0003B0FD /* IncomingList.swift in Sources */,
+				FAD927131C79F8DB0003B0FD /* MetroCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +530,11 @@
 			isa = PBXTargetDependency;
 			target = FAD926BC1C788BD40003B0FD /* StibNextMetroAround */;
 			targetProxy = FAD926DD1C788BD50003B0FD /* PBXContainerItemProxy */;
+		};
+		FAD926FE1C788C150003B0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD926F11C788C150003B0FD /* nextMetro */;
+			targetProxy = FAD926FD1C788C150003B0FD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,6 +553,14 @@
 				FAD926CA1C788BD50003B0FD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FAD926F91C788C150003B0FD /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD926FA1C788C150003B0FD /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -400,8 +651,15 @@
 		};
 		FAD926E61C788BD50003B0FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6C3D76154BCF124C24385EE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = StibNextMetroAround/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GasparAlex.StibNextMetroAround;
@@ -411,8 +669,15 @@
 		};
 		FAD926E71C788BD50003B0FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910C4D8D21DF88D38E08F478 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = StibNextMetroAround/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GasparAlex.StibNextMetroAround;
@@ -468,6 +733,39 @@
 			};
 			name = Release;
 		};
+		FAD927011C788C150003B0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: al.gaspar@gmail.com (D6BWDUNE7R)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = nextMetro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GasparAlex.StibNextMetroAround.nextMetro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FAD927021C788C150003B0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: al.gaspar@gmail.com (D6BWDUNE7R)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = nextMetro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = GasparAlex.StibNextMetroAround.nextMetro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -487,6 +785,7 @@
 				FAD926E71C788BD50003B0FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAD926E81C788BD50003B0FD /* Build configuration list for PBXNativeTarget "StibNextMetroAroundTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +794,7 @@
 				FAD926EA1C788BD50003B0FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAD926EB1C788BD50003B0FD /* Build configuration list for PBXNativeTarget "StibNextMetroAroundUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +803,16 @@
 				FAD926ED1C788BD50003B0FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD927001C788C150003B0FD /* Build configuration list for PBXNativeTarget "nextMetro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD927011C788C150003B0FD /* Debug */,
+				FAD927021C788C150003B0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
